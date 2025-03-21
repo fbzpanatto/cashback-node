@@ -9,7 +9,7 @@ const app: Application = express();
 const port = 3000;
 
 // Criando servidor HTTP para suportar WebSockets
-const server = http.createServer(app);
+const server = http.createServer(app)
 const io = new Server(server, {
   cors: {
     origin: "*", // Permite conexões de qualquer origem (pode ser ajustado)
